@@ -35,6 +35,9 @@ class Form extends Component {
     }
 
     submit = () => {
+        if (!this.state.item) {
+            return;
+        }
         this.props.addItem(this.state.item);
         this.setState(this.initialState);
     }
