@@ -18,7 +18,7 @@ class App extends Component {
                     <h1>To Do List</h1>
                 </div>
                 <Table toDoItems={items} removeItem={this.removeItem} completeItem={this.completeItem} count={this.state.count} />
-                {this.state.count === 0 ? <p>You have no items yet!</p> : ""}
+                {this.state.count === 0 ? <p>You have no items yet.</p> : ""}
                 <Form addItem={this.addItem} />
             </div>
         )
